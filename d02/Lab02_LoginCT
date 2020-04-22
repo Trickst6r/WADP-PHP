@@ -1,0 +1,18 @@
+<?php
+
+//kiem tra xem trang [lab_02_login.html] da duoc chay chua?
+if(isset($_POST["btnOK"])==FALSE){
+    //chua chay trang html -> chuyen huong ve trang html do
+    header("location:Lab02_Login.html");
+    exit();
+}
+
+/* 
+lay du lieu dang nhap tren form cua trang lab_02_login.html
+ */
+$username = $_POST["txtLogin"];
+$password = $_POST["txtPass"];
+
+echo "<h2>Chao $username, mat khau cua ban la $password</h2>";
+
+?>

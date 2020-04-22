@@ -1,0 +1,18 @@
+0. Chuẩn bị hình ảnh của các sản phẩm mà mình muốn kinh doanh và quảng cáo [size, format, name ( trùng mã số sản phẩm) ]
+1. Tạo tập tin mổ tả cấu trúc dữ liệu sản phẩm: data.inc
+    Trong tập tin này:
+	. Định nghĩa lớp Product.
+	. Tạo 1 db chứa danh sách sản phẩm
+	. Định nghĩa hàm tìm kiếm sp theo mã số
+
+2. Tạo trang in ra ds sản phẩm dbase [data]
+
+3. Tạo trang php, xử lý việc đưa 1 sản phẩm được trọn bên trang product vô giỏ hàng: d08_product_cart.php
+	.Trong bài toán này, sử dụng biến session để lưu trữ thông tin giỏ hàng.
+	.Biến session giohang là 1 cấu truc mảng kết hợp 2 cột: maso sản phẩm đặt mua, thông tin chi tiết (ma so, ten, mota, don gia, soluong dat mua)
+
+	Xử lý:
+	.Tìm xem sản phẩm được chọn mua đã có trong giò hàng chưa (ds ham search ($id)). Nếu có rồi -> tăng số lượng đặt mua lên 1 đơn vị; Chưa có -> thêm 1 sp mới chọn vô giỏ hàng
+
+
+4. Tạo trang xem giỏ hàng : in hết tất cả dòng sản phẩm đặt mua lưu trong biến session giỏ hàng
