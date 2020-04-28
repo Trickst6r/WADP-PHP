@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Create New Product</title>
+        <!-- Font Google -->
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <!-- Style.css -->        
+        <link href="../css/CodeMau_form.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container">
+            <section>
+                <div >
+                    <h2>Nhập Thông Tin Sản Phẩm</h2>
+                    <hr>
+                    <form class="normal_form" action="Create.php">
+                        ProductName :<br>
+                        <input type="text" name="txtName" id="txtName" value="Macchiato" required><br><br>
+                        UnitPrie :<br>
+                        <input type="number" step="0.01" name="txtPrice" id="txtPrice" min="0" max="10000" value="10" required><br><br>
+                        Quantity : <br>
+                        <input type="number" step="0.01" name="txtQuantity" id="txtQuantity" max="100" min="1"  value="1"  required><br><br>
+                        <input type="submit" name="btnOK" value="Create">
+                        <input type="reset" name="btnReset" value="Reset">
+                    </form>
+                    <br>
+                    <a href="Index.php">List of Product</a> <br><br>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
